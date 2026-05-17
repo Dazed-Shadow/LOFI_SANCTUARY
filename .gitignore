@@ -46,3 +46,8 @@ scripts/backups/
 # Personal journal — local only, never commit (whitelist README only)
 journal/*
 !journal/README.md
+
+# EPK asset binaries — local until JR explicitly stages cover art
+# Whitelist only the .gitkeep so the directory stays in the repo
+epk/assets/*
+!epk/assets/.gitkeep

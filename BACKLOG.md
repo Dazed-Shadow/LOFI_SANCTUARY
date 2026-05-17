@@ -9,11 +9,21 @@
 > want a static checked-in copy (e.g. before tagging a release or sharing
 > the repo for review).
 >
-> Last regenerated: **2026-05-17** (after BPM extraction + cover-gen variance decisions)
+> Last regenerated: **2026-05-17** (after audio-file constraint + EPK scaffold)
 
 ---
 
 ## Open
+
+### 🔴 High — Build Gaming EPK / Portfolio HTML site
+**Type:** Feature · **Status:** In Progress · **Tags:** `design` `outreach`
+
+Public-facing artist landing page that doubles as the outreach EPK for streamers and (eventually) game devs. Scaffold shipped at `epk/` — single-page vanilla HTML + CSS, cozy aesthetic, placeholder copy clearly marked. Sections live: hero, about, featured tracks (Spotify embed slots), cover gallery, licensing (stream-safe + game-safe + custom commissions), contact, footer. Pending: artist public name, bio (3-4 sentences), 3 featured track Spotify IDs, contact channel. Deployment via GitHub Pages from `/epk` folder when filled in.
+
+### 🔴 High — Source raw audio files from the artist (target: end of 2026-05-24 weekend)
+**Type:** Asset · **Tags:** `asset` `licensing`
+
+Audio files only exist on Spotify currently — blocks BPM extraction script, Tier A loop generation, and Tier C visualizer rendering. JR is asking the artist for raw MP3/WAV masters. Once received: drop into local audio library (gitignored), run `scripts/extract_bpm.py` to backfill BPM, unblock Tier A/C. Half the pipeline gates on this.
 
 ### 🔴 High — Catalog her actual song library
 **Type:** Asset · **Tags:** `asset` `notion`

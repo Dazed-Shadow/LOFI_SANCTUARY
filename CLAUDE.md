@@ -22,22 +22,31 @@ This is a creative/marketing project, not a deployed application. There is no ba
 ```
 docs/
   blueprint.md           # The master strategy (source of truth for direction)
-  design-system.md       # Cozy Gamer Sanctuary — palette, motifs, anti-patterns
+  design-system.md       # Cozy Gamer Sanctuary — palette, motifs, anti-patterns, per-track variance
 prompts/
   README.md              # Index of all AI prompts
   tier-a-longform.md     # 1-hour YouTube ambient loops
   tier-b-shortform.md    # 15-30s TikTok/Shorts (fake cozy dev log hooks)
-  tier-c-visualizer.md   # Audio-reactive abstract visualizers
+  tier-c-visualizer.md   # Audio-reactive abstract visualizers (SECONDARY tier)
 outreach/
   README.md              # Playbook index + status conventions
   cozy-streamer-pack.md  # Pitch for mid-tier Twitch/VTuber
   itch-io-game-jam.md    # Pitch for indie game devs / jam packs
+epk/
+  index.html             # Public artist EPK landing page (single-page vanilla HTML)
+  styles.css             # Cozy Gamer Sanctuary palette + responsive layout
+  assets/                # Cover art, hero images (gitignored except .gitkeep)
+  README.md              # Local preview + deployment notes
+journal/                 # Local-only Owner Log markdown (gitignored except README)
 assets/                  # Small refs only (palettes, mood boards)
 scripts/
   notion_setup.py        # One-time Notion workspace bootstrap
-  notion_client.py       # Reusable Notion API helper
+  notion_client.py       # Token-based Notion API helper
+  notion_backup.py       # Scripted full backup of all 9 DBs
+  extract_bpm.py         # librosa-based BPM extraction (pending audio file arrival)
+  requirements.txt       # librosa + soundfile
 .github/                 # Workflows (placeholder)
-BACKLOG.md               # User-owned running log — single source of truth
+BACKLOG.md               # Regenerated snapshot — source of truth is 📌 Backlog DB in Notion
 CLAUDE.md                # This file
 README.md                # Public repo landing
 ```

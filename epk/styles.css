@@ -1,0 +1,239 @@
+/* ───── Cozy Gamer Sanctuary palette ──────────────────────────────
+   See docs/design-system.md for the canonical tokens.
+   ────────────────────────────────────────────────────────────────── */
+:root {
+  --sage-fog:     #A8B89A;
+  --cream-paper:  #F4ECD8;
+  --earth-cocoa:  #6B4F3F;
+  --pastel-rose:  #E8B4B8;
+  --amber-lamp:   #E8A857;
+  --rain-slate:   #5C6B73;
+  --cocoa-night:  #2B1F1A;
+
+  --ink:          #2B1F1A;
+  --ink-soft:     #4A3B33;
+  --paper:        #F4ECD8;
+  --paper-soft:   #FAF4E4;
+  --accent:       #E8A857;
+  --accent-soft:  #F2C98B;
+  --quiet:        #A8B89A;
+}
+
+/* ───── Reset / base ─────────────────────────────────────────────── */
+*, *::before, *::after { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  font-size: 17px;
+  line-height: 1.65;
+  color: var(--ink);
+  background: var(--paper);
+  -webkit-font-smoothing: antialiased;
+}
+h1, h2, h3 {
+  font-family: 'Fraunces', Georgia, serif;
+  font-weight: 500;
+  color: var(--ink);
+  line-height: 1.15;
+  margin: 0 0 0.6em;
+  letter-spacing: -0.01em;
+}
+h1 { font-size: clamp(2.4rem, 5vw, 4.2rem); }
+h2 { font-size: clamp(1.6rem, 3vw, 2.4rem); }
+h3 { font-size: 1.2rem; font-weight: 600; }
+p  { margin: 0 0 1em; }
+a  { color: var(--ink); text-decoration: underline; text-decoration-color: var(--accent-soft); text-underline-offset: 3px; }
+a:hover { text-decoration-color: var(--accent); }
+code {
+  font-family: 'JetBrains Mono', 'Consolas', monospace;
+  font-size: 0.92em;
+  background: var(--paper-soft);
+  padding: 0.1em 0.4em;
+  border-radius: 4px;
+}
+
+/* ───── Layout ───────────────────────────────────────────────────── */
+.container {
+  max-width: 880px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+.section { padding: 96px 0; }
+.section-intro {
+  color: var(--ink-soft);
+  margin-bottom: 2.4em;
+}
+.lead {
+  font-size: 1.15rem;
+  color: var(--ink-soft);
+}
+
+/* ───── Hero ─────────────────────────────────────────────────────── */
+.hero {
+  padding: 120px 0 96px;
+  background:
+    radial-gradient(ellipse at 70% 20%, rgba(232, 168, 87, 0.18), transparent 55%),
+    radial-gradient(ellipse at 20% 80%, rgba(168, 184, 154, 0.22), transparent 60%),
+    var(--paper);
+  border-bottom: 1px solid rgba(107, 79, 63, 0.12);
+}
+.hero-inner {
+  max-width: 880px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+.kicker {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  color: var(--rain-slate);
+  margin-bottom: 1.2em;
+}
+.artist-name { margin: 0 0 0.2em; }
+.tagline {
+  font-size: clamp(1.1rem, 2vw, 1.4rem);
+  color: var(--ink-soft);
+  max-width: 36ch;
+  margin: 0 0 2em;
+}
+.hero-actions {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+.btn {
+  display: inline-block;
+  padding: 12px 24px;
+  border-radius: 999px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+.btn-primary {
+  background: var(--ink);
+  color: var(--paper);
+}
+.btn-primary:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 18px rgba(43, 31, 26, 0.18);
+}
+.btn-ghost {
+  border: 1px solid rgba(43, 31, 26, 0.25);
+  color: var(--ink);
+}
+.btn-ghost:hover {
+  background: var(--paper-soft);
+  border-color: var(--ink);
+}
+
+/* ───── Tracks ───────────────────────────────────────────────────── */
+.section-tracks { background: var(--paper-soft); }
+.track-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 18px;
+}
+.track-card {
+  background: var(--paper);
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 1px 0 rgba(107, 79, 63, 0.08), 0 6px 18px rgba(43, 31, 26, 0.04);
+}
+
+/* ───── Gallery ──────────────────────────────────────────────────── */
+.cover-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 18px;
+}
+.cover-card {
+  aspect-ratio: 1 / 1;
+  border-radius: 12px;
+  overflow: hidden;
+  background: var(--paper-soft);
+}
+.cover-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* ───── Licensing ────────────────────────────────────────────────── */
+.section-licensing { background: var(--paper-soft); }
+.license-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 18px;
+  margin-bottom: 2em;
+}
+.license-card {
+  background: var(--paper);
+  padding: 26px;
+  border-radius: 14px;
+  border: 1px solid rgba(107, 79, 63, 0.1);
+}
+.license-card h3 {
+  color: var(--earth-cocoa);
+  margin-bottom: 0.5em;
+}
+.license-credit {
+  font-size: 0.95rem;
+  color: var(--ink-soft);
+  padding: 16px 20px;
+  background: var(--paper);
+  border-left: 3px solid var(--amber-lamp);
+  border-radius: 0 8px 8px 0;
+}
+
+/* ───── Footer ───────────────────────────────────────────────────── */
+.footer {
+  padding: 32px 0;
+  text-align: center;
+  font-size: 0.9rem;
+  color: var(--ink-soft);
+  border-top: 1px solid rgba(107, 79, 63, 0.12);
+}
+
+/* ───── Placeholder styling (visible while content is unfilled) ──── */
+.placeholder {
+  color: var(--rain-slate);
+  font-style: italic;
+  background: rgba(232, 168, 87, 0.12);
+  padding: 0.1em 0.35em;
+  border-radius: 3px;
+  border-bottom: 1px dashed var(--amber-lamp);
+}
+.placeholder-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: repeating-linear-gradient(
+    45deg,
+    var(--paper-soft),
+    var(--paper-soft) 10px,
+    rgba(232, 168, 87, 0.08) 10px,
+    rgba(232, 168, 87, 0.08) 20px
+  );
+  color: var(--rain-slate);
+  font-size: 0.9rem;
+  text-align: center;
+  min-height: 120px;
+}
+.track-placeholder {
+  padding: 24px;
+}
+.track-placeholder span {
+  font-size: 0.75rem;
+  color: var(--quiet);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+/* ───── Responsive ───────────────────────────────────────────────── */
+@media (max-width: 600px) {
+  .section { padding: 64px 0; }
+  .hero { padding: 80px 0 64px; }
+  .btn { padding: 10px 18px; font-size: 0.95rem; }
+}

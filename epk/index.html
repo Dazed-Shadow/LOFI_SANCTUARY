@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LOFI_SANCTUARY · Artist EPK</title>
+  <meta name="description" content="Original lo-fi tracks for cozy gaming streams, indie games, and quiet moments." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ───── Hero ──────────────────────────────────────────────────── -->
+  <header class="hero">
+    <div class="hero-inner">
+      <p class="kicker">Original lo-fi · cozy gaming</p>
+      <h1 class="artist-name"><!-- TODO: artist public name --><span class="placeholder">[Artist Name]</span></h1>
+      <p class="tagline">
+        <!-- TODO: one-line tagline. Examples:
+             "Soundtracks for cozy games you haven't played yet."
+             "Quiet songs for rainy windows and warm mugs." -->
+        <span class="placeholder">[One-line tagline goes here.]</span>
+      </p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="https://open.spotify.com/artist/3AjmrMM0t7YekEDKnk5Tai?si=lS0rhtkoQ16aYZ_1Y3HZ9g" target="_blank" rel="noopener">Listen on Spotify</a>
+        <a class="btn btn-ghost" href="#tracks">Featured tracks</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ───── About ─────────────────────────────────────────────────── -->
+  <section class="section section-about" id="about">
+    <div class="container">
+      <h2>About</h2>
+      <p class="lead">
+        <!-- TODO: 3-4 sentences. Who she is, what she makes, what it's for.
+             Keep it warm. First-person OR third-person, pick one and stick to it. -->
+        <span class="placeholder">[3-4 sentence bio. Who she is, what she makes, what the music is for. Warm, no marketing voice. Reference cozy games, late nights, rainy mornings — whatever fits.]</span>
+      </p>
+    </div>
+  </section>
+
+  <!-- ───── Featured tracks ───────────────────────────────────────── -->
+  <section class="section section-tracks" id="tracks">
+    <div class="container">
+      <h2>Featured tracks</h2>
+      <p class="section-intro">Press play. Each loop is pre-cleared for stream and in-game use — see <a href="#licensing">Licensing</a>.</p>
+
+      <div class="track-grid">
+        <!-- TODO: replace SPOTIFY_TRACK_ID with real IDs once JR picks featured tracks.
+             Spotify embed URL: https://open.spotify.com/embed/track/{TRACK_ID}
+             Get TRACK_ID by clicking a track on Spotify → Share → Copy link → grab the
+             /track/{ID} portion. -->
+        <div class="track-card placeholder-card">
+          <div class="track-placeholder">Featured track 1<br /><span>Spotify embed slot</span></div>
+        </div>
+        <div class="track-card placeholder-card">
+          <div class="track-placeholder">Featured track 2<br /><span>Spotify embed slot</span></div>
+        </div>
+        <div class="track-card placeholder-card">
+          <div class="track-placeholder">Featured track 3<br /><span>Spotify embed slot</span></div>
+        </div>
+
+        <!-- Template for a real Spotify embed (uncomment + paste track ID):
+        <div class="track-card">
+          <iframe
+            style="border-radius:12px"
+            src="https://open.spotify.com/embed/track/SPOTIFY_TRACK_ID?utm_source=generator"
+            width="100%" height="152" frameborder="0" allowfullscreen=""
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+            loading="lazy"></iframe>
+        </div>
+        -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ───── Cover gallery ─────────────────────────────────────────── -->
+  <section class="section section-gallery" id="gallery">
+    <div class="container">
+      <h2>Covers</h2>
+      <p class="section-intro">Per-track artwork. Cozy is the umbrella; each cover follows the song's actual mood.</p>
+      <div class="cover-grid">
+        <!-- TODO: drop in real cover art as AI/JR/Artist covers come online.
+             Each cover is just an img inside .cover-card. Filename convention:
+             assets/covers/{slug}.jpg (square works best, 800x800+) -->
+        <div class="cover-card placeholder-card">
+          <span>Cover slot 1</span>
+        </div>
+        <div class="cover-card placeholder-card">
+          <span>Cover slot 2</span>
+        </div>
+        <div class="cover-card placeholder-card">
+          <span>Cover slot 3</span>
+        </div>
+        <div class="cover-card placeholder-card">
+          <span>Cover slot 4</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ───── Licensing ─────────────────────────────────────────────── -->
+  <section class="section section-licensing" id="licensing">
+    <div class="container">
+      <h2>Licensing</h2>
+      <div class="license-grid">
+        <div class="license-card">
+          <h3>Stream-Safe</h3>
+          <p>Cleared for Twitch, YouTube, Kick, and Discord stages. Drop the track in your stream pack with the credit line below. No takedowns from us, ever.</p>
+        </div>
+        <div class="license-card">
+          <h3>Game-Safe</h3>
+          <p>Indie devs can use any cleared track in-game (commercial or non-commercial), no royalties. The ask: credit in the credits screen and a link in your project description.</p>
+        </div>
+        <div class="license-card">
+          <h3>Custom commissions</h3>
+          <p>Need a specific mood for a stream theme or a game scene? Custom tracks available at indie-friendly rates. Reach out below.</p>
+        </div>
+      </div>
+      <p class="license-credit">
+        <strong>Credit line:</strong> <code>Music by [Artist Name] · [epk-url]</code>
+      </p>
+    </div>
+  </section>
+
+  <!-- ───── Contact ───────────────────────────────────────────────── -->
+  <section class="section section-contact" id="contact">
+    <div class="container">
+      <h2>Get in touch</h2>
+      <p class="lead">
+        <!-- TODO: pick a contact channel. Email is easiest. Optional: socials.
+             Don't expose a personal email — set up a dedicated alias if needed. -->
+        <span class="placeholder">[contact email or contact form link]</span>
+      </p>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© 2026 <span class="placeholder">[Artist Name]</span>. Site by LOFI_SANCTUARY.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
