@@ -42,3 +42,7 @@ Thumbs.db
 
 # Notion backups — local snapshots only, never commit
 scripts/backups/
+
+# Personal journal — local only, never commit (whitelist README only)
+journal/*
+!journal/README.md

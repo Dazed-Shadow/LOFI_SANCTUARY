@@ -51,6 +51,8 @@ DATABASES = {
     "Content Pipeline": os.getenv("NOTION_CONTENT_PIPELINE_DB", "019118f7c515411ab4fe38b8e2cd1b45"),
     "Session Log":      os.getenv("NOTION_SESSION_LOG_DB", "7e81ea6e91fc4d4aad6d24620eda593a"),
     "Backlog":          os.getenv("NOTION_BACKLOG_DB", "9d0a30fd4fef43c4ad788770f8fcaaa5"),
+    "Owner Log":        os.getenv("NOTION_OWNER_LOG_DB", "8e7af2a7f62d41b5a67bf530472bc1be"),
+    "References":       os.getenv("NOTION_REFERENCES_DB", "7ae8adbd39b04bbba01187c5801312c5"),
 }
 
 

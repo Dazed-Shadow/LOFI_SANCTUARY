@@ -92,7 +92,9 @@ Workspace: separate top-level Notion workspace (`LOFI Sanctuary`), auth'd via th
 | 🎬 Content Pipeline | https://www.notion.so/019118f7c515411ab4fe38b8e2cd1b45 | Kanban — ideation to published |
 | 📨 Outreach CRM | https://www.notion.so/5338e679565a4caf85fdcae8dfa39f4d | Streamer/dev contacts + pitch status |
 | ✍️ Prompt Library | https://www.notion.so/d41b2e5f8481479e93e12d3d209ec4ec | Proven AI video/image prompts by tier |
-| 📓 Session Log | https://www.notion.so/7e81ea6e91fc4d4aad6d24620eda593a | Per-session state for resume-ability |
+| 📓 Session Log | https://www.notion.so/7e81ea6e91fc4d4aad6d24620eda593a | Per-session state for resume-ability (Opus + Sonnet activity) |
+| 📔 **Owner Log** | https://www.notion.so/8e7af2a7f62d41b5a67bf530472bc1be | Jonathan's personal log — ideas, reactions, decisions. Notion-only; paired with local gitignored `journal/` directory. Distinct from agent Session Log. |
+| 🔗 **References** | https://www.notion.so/7ae8adbd39b04bbba01187c5801312c5 | External tools/sites/communities by category (AI gen, indie communities, streaming platforms, etc.) |
 
 ## Safeguard & backups
 

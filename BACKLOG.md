@@ -9,7 +9,7 @@
 > want a static checked-in copy (e.g. before tagging a release or sharing
 > the repo for review).
 >
-> Last regenerated: **2026-05-17** (after Spotify artist URL wired in)
+> Last regenerated: **2026-05-17** (after Owner Log + References DBs + 2-column landing layout)
 
 ---
 
@@ -32,6 +32,18 @@ Populate the framework with the first real batch:
 ---
 
 ## Done
+
+### ✅ Owner Log + References DBs + 2-column landing layout — 2026-05-17
+**Type:** Enhancement · **Tags:** `notion`
+
+Round-3 enhancements:
+- **📔 Owner Log DB** (Notion-only) — personal log distinct from agent Session Log. Schema: Entry Title, Date, Energy (High/Medium/Low/Drained), Tags (idea/reaction/decision/concern/win/observation/family/craft/business), Linked Track relation, Entry rich text.
+- **🔗 References DB** — external tools/sites/communities by Category (AI Image/Video/Audio/Visualizer Gen, Indie Game Community, Game Jam, Streaming Platform, Outreach Tool, Licensing, Reading, Other) + Status + Tags. Seeded with 8 starters: Kling AI, Pika, Neural Frames, Midjourney, OpenArt, Itch.io, Twitch, Reddit r/IndieDev.
+- **2-column landing layout** — metadata table left, References preview right. Fixed misplaced Safeguard heading from previous round.
+- **`journal/` directory** — local gitignored markdown companion to Owner Log DB. README explains conventions.
+- **`notion_backup.py` + `.env.example`** updated for the 2 new DBs (8 total now).
+
+All schema additions, no destructive changes. Pre-change snapshot in `scripts/backups/session_2026-05-17_pre-owner-log-and-references.json`.
 
 ### ✅ Wire her Spotify artist page into the workspace — 2026-05-17
 **Type:** Enhancement · **Tags:** `notion` `asset`
