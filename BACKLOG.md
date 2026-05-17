@@ -9,7 +9,7 @@
 > want a static checked-in copy (e.g. before tagging a release or sharing
 > the repo for review).
 >
-> Last regenerated: **2026-05-17** (after Decisions DB + Asset Library cover-art schema)
+> Last regenerated: **2026-05-17** (after BPM extraction + cover-gen variance decisions)
 
 ---
 
@@ -32,6 +32,15 @@ Populate the framework with the first real batch:
 ---
 
 ## Done
+
+### ✅ BPM extraction tooling + cover-gen variance decision — 2026-05-17
+**Type:** Enhancement · **Tags:** `tooling` `aesthetic` `pipeline`
+
+Round-5 enhancements:
+- **`scripts/extract_bpm.py`** (librosa-based) — extracts BPM + duration from local audio files. Prints half/double sanity columns because lo-fi rhythm patterns can fool simple beat trackers. Includes `scripts/requirements.txt`.
+- **Decision: Cover-gen aesthetic variance** logged in 🧠 Decisions DB — cozy is the catalog umbrella, but per-track mood drives style (techno/joy-leaning when track calls for it). `docs/design-system.md` updated with the "Per-track variance" section spelling out palette weighting by mood.
+- **Decision: BPM via librosa, not Spotify Web API** logged in 🧠 Decisions DB — Spotify audio-features endpoint was deprecated for new apps Nov 2024; local-first is more durable.
+- **CLAUDE.md per-track pipeline** updated: BPM extraction is now step 1 (not manual entry).
 
 ### ✅ Decisions DB + Asset Library cover-art schema + per-track design pipeline — 2026-05-17
 **Type:** Enhancement · **Tags:** `notion` `asset` `pipeline` `workflow`

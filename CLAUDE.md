@@ -111,8 +111,14 @@ For each track in the Asset Library, the path from row to rendered output:
 
 ```
 Row created (min: Track Title + Spotify Link)
-  → JR fills BPM + Mood (+ JR Alt Title if the official title is generic)
-  → AI Cover Art generated (Midjourney/OpenArt, prompt from BPM + Mood + design system tokens)
+  → BPM extracted via `python scripts/extract_bpm.py <audio_folder>`
+       outputs Filename + BPM + half/double sanity + duration
+       JR pastes BPM + duration into the Asset Library row
+  → JR fills Mood tags (+ JR Alt Title if the official title is generic)
+  → AI Cover Art generated (Midjourney/OpenArt) — prompt derived from:
+       BPM (high = lean energetic/joy/techno; low = lean cozy)
+       Mood (drives palette weighting per docs/design-system.md "Per-track variance")
+       Design system universals (hand-crafted, no photoreal/neon/RGB)
   → JR review → keep AI cover, paint a JR Cover, or fall back to Artist Cover
   → Cover Selected (multi-select) marks which cover(s) feed downstream — blends allowed
   → Tier A loop | Tier B narrative short | Tier C visualizer
@@ -122,7 +128,11 @@ Row created (min: Track Title + Spotify Link)
   → Video Link populated → Content Pipeline entry created tying track + prompt + render
 ```
 
+**On cover-gen variance (Decisions DB):** The cozy aesthetic is the catalog umbrella, not a straitjacket. A high-BPM track can lean energetic/techno/joyful; a melancholy track leans cozy/rainy. The design system's universals still hold (hand-crafted, no photoreal/neon) but palette weighting and motif density vary per track. See `docs/design-system.md` → "Per-track variance".
+
 **On Tier C (Neural Frames):** Per the Decisions DB, Tier C is a *secondary* vehicle — useful for audio-only contexts (YouTube auto-visualizers, sleep/focus playlists) where motion is expected, but it fundamentally fights the cozy gaming aesthetic. Prompts must aggressively constrain output toward sage/cream/amber palette with soft particle drift, NOT default-Neural-Frames psychedelia.
+
+**On BPM extraction (Decisions DB):** `scripts/extract_bpm.py` (librosa-based) extracts BPM + duration from local audio files. Spotify Web API audio-features was considered and rejected (deprecated for new apps Nov 2024). The script prints half/double sanity values because librosa can octave-error on lo-fi rhythm patterns.
 
 ## Safeguard & backups
 

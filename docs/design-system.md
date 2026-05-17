@@ -51,6 +51,31 @@ Avoid pure black, pure white, pure saturated primaries.
 
 Single warm key light (lamp, monitor glow, sunset through window). Soft shadows. Subtle rim light from a cooler ambient source (overcast window light) is fine for contrast.
 
+## Per-track variance (cover gen)
+
+The Cozy Gamer Sanctuary aesthetic is the **catalog-level umbrella** — landing page, masthead, brand voice, hero compositions. It is not a straitjacket that flattens every cover into the same look.
+
+Individual track covers should reflect what the **track** actually does:
+
+| Track mood / energy | Cover lean | Palette weighting |
+|---|---|---|
+| Rainy afternoon / midnight study | Classic cozy | sage-fog, rain-slate, cocoa-night, amber-lamp |
+| Morning coffee / sunday lazy | Bright cozy | cream-paper, amber-lamp, pastel-rose, sage-fog |
+| Autumn walk | Outdoor cozy | earth-cocoa, amber-lamp, sage-fog (muted) |
+| Focused work / driving beat | Energetic / joy-leaning | brighter palette, slightly more saturation, possibly geometric motifs |
+| High-BPM techno-leaning | Pull away from cozy | bolder color blocking, abstract shapes, but still **hand-crafted** and **no photoreal / no neon RGB** |
+
+**What stays universal regardless of mood:**
+
+- Hand-crafted feel (pixel art or low-poly, slight imperfection)
+- No photoreal, no neon, no RGB, no sci-fi/cyberpunk
+- No pure black, pure white, or pure saturated primaries
+- Soft lighting, no harsh contrast
+
+**What varies per track:** palette weighting, motif choice, energy level of composition, density of detail. A techno-leaning cover can be MORE abstract and bolder than a midnight-study cover — but both still feel made by a human, not extruded from a stock generator.
+
+The cozy umbrella keeps the catalog readable as one body of work; the variance keeps each track's cover honest to the music.
+
 ## Loop discipline (Tier A pipeline)
 
 Tier A 1-hour YouTube tracks demand **seamless loops** with zero tearing or canvas-drift. Two-step rule:

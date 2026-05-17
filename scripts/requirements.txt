@@ -1,0 +1,8 @@
+# Python deps for scripts/
+# Install: pip install -r scripts/requirements.txt
+#
+# extract_bpm.py uses librosa for beat tracking and duration.
+# soundfile handles WAV/FLAC reading; audioread is librosa's fallback for MP3/M4A/etc.
+
+librosa>=0.10.0
+soundfile>=0.12.0
