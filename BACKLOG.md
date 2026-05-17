@@ -9,7 +9,7 @@
 > want a static checked-in copy (e.g. before tagging a release or sharing
 > the repo for review).
 >
-> Last regenerated: **2026-05-17** (after Owner Log + References DBs + 2-column landing layout)
+> Last regenerated: **2026-05-17** (after Decisions DB + Asset Library cover-art schema)
 
 ---
 
@@ -32,6 +32,18 @@ Populate the framework with the first real batch:
 ---
 
 ## Done
+
+### ✅ Decisions DB + Asset Library cover-art schema + per-track design pipeline — 2026-05-17
+**Type:** Enhancement · **Tags:** `notion` `asset` `pipeline` `workflow`
+
+Round-4 enhancements:
+- **🧠 Decisions DB** added (HZ pattern) — captures architectural / creative-direction calls with rationale and alternatives. Distinct from Backlog (items) and Session Log (activity). Seeded with 4 foundational decisions: Hybrid Notion architecture, Separate Notion workspace, Safeguard rule + ADD-only philosophy, Tier C as secondary vehicle with Neural Frames + cozy-constraints.
+- **Asset Library schema extended** (6 ADD-only columns): `Artist Cover Art` (FILES), `JR Cover Art` (FILES), `AI Cover Art` (FILES), `JR Alt Title` (RICH_TEXT), `Video Link` (URL), `Cover Selected` (multi-select Artist/JR/AI — blend optionality).
+- **Per-track design pipeline** documented in CLAUDE.md: row → BPM/Mood → AI Cover gen → JR review → Cover Selected (allows blends) → Tier A/B/C render → Video Link populated.
+- **Session-start ritual** documented in both landing page and CLAUDE.md so backlog items Jonathan adds directly are picked up at the start of every session.
+- **9 total DBs** now backed up by `notion_backup.py`.
+
+Pre-change snapshot: `scripts/backups/session_2026-05-17_pre-decisions-db-and-cover-art.json`.
 
 ### ✅ Owner Log + References DBs + 2-column landing layout — 2026-05-17
 **Type:** Enhancement · **Tags:** `notion`

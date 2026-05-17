@@ -88,13 +88,41 @@ Workspace: separate top-level Notion workspace (`LOFI Sanctuary`), auth'd via th
 | 🎨 Design System | https://www.notion.so/363c30e131488159aff3fbd6981d3e7d | Cozy Gamer Sanctuary spec (canonical in `docs/design-system.md`) |
 | 🧭 Quick Reference | https://www.notion.so/363c30e131488164b084d2d65ccf6df7 | Status conventions, caption voice, session checklist |
 | 📌 **Backlog** | https://www.notion.so/9d0a30fd4fef43c4ad788770f8fcaaa5 | **Source of truth** for items. `BACKLOG.md` in the repo is a regenerated snapshot. |
-| 🎵 Asset Library | https://www.notion.so/cdf82b386d3b4bd28ea250ea0d4fbb05 | Every track + clearance status. Includes `Available On` (platforms), `Spotify Link`, and `Track Docs` (briefs/lyric sheets/references) |
+| 🧠 **Decisions** | https://www.notion.so/209730e36c5245fdac808ab602a1ed6d | **Source of truth** for design/architecture/creative-direction calls with rationale + alternatives. Distinct from Backlog (items) and Session Log (activity). |
+| 🎵 Asset Library | https://www.notion.so/cdf82b386d3b4bd28ea250ea0d4fbb05 | Every track + clearance status. Includes `Artist/JR/AI Cover Art`, `Cover Selected` (multi-select for blend optionality), `JR Alt Title`, `Video Link`, `Available On`, `Spotify Link`, `Track Docs`. |
 | 🎬 Content Pipeline | https://www.notion.so/019118f7c515411ab4fe38b8e2cd1b45 | Kanban — ideation to published |
 | 📨 Outreach CRM | https://www.notion.so/5338e679565a4caf85fdcae8dfa39f4d | Streamer/dev contacts + pitch status |
 | ✍️ Prompt Library | https://www.notion.so/d41b2e5f8481479e93e12d3d209ec4ec | Proven AI video/image prompts by tier |
 | 📓 Session Log | https://www.notion.so/7e81ea6e91fc4d4aad6d24620eda593a | Per-session state for resume-ability (Opus + Sonnet activity) |
 | 📔 **Owner Log** | https://www.notion.so/8e7af2a7f62d41b5a67bf530472bc1be | Jonathan's personal log — ideas, reactions, decisions. Notion-only; paired with local gitignored `journal/` directory. Distinct from agent Session Log. |
 | 🔗 **References** | https://www.notion.so/7ae8adbd39b04bbba01187c5801312c5 | External tools/sites/communities by category (AI gen, indie communities, streaming platforms, etc.) |
+
+## Session start ritual (do this every session, in order)
+
+1. Read the most recent **📓 Session Log** entry's `Next session` field — picks up where the prior session left off.
+2. Skim **📌 Backlog** for items Jonathan added between sessions. Filter `Status = Open`, sort by `Date` desc. **Jonathan's direct-add rows are safe** — Claude only edits specific page IDs, never `replace_content` on the DB itself.
+3. Check **🧠 Decisions** for any `Pending` items needing review or ratification.
+4. Glance **🎬 Content Pipeline** at `Rendering` or `Scheduled` stages — has anything stalled?
+5. Glance **📨 Outreach CRM** for `Follow Up` dates due today.
+
+## Per-track design pipeline
+
+For each track in the Asset Library, the path from row to rendered output:
+
+```
+Row created (min: Track Title + Spotify Link)
+  → JR fills BPM + Mood (+ JR Alt Title if the official title is generic)
+  → AI Cover Art generated (Midjourney/OpenArt, prompt from BPM + Mood + design system tokens)
+  → JR review → keep AI cover, paint a JR Cover, or fall back to Artist Cover
+  → Cover Selected (multi-select) marks which cover(s) feed downstream — blends allowed
+  → Tier A loop | Tier B narrative short | Tier C visualizer
+       Tier A: Midjourney static → Kling micro-animation, 1hr YouTube
+       Tier B: Pika/WAN game-engine camera, 15-30s short-form
+       Tier C: Neural Frames audio-reactive (SECONDARY vehicle, cozy-constrained prompts)
+  → Video Link populated → Content Pipeline entry created tying track + prompt + render
+```
+
+**On Tier C (Neural Frames):** Per the Decisions DB, Tier C is a *secondary* vehicle — useful for audio-only contexts (YouTube auto-visualizers, sleep/focus playlists) where motion is expected, but it fundamentally fights the cozy gaming aesthetic. Prompts must aggressively constrain output toward sage/cream/amber palette with soft particle drift, NOT default-Neural-Frames psychedelia.
 
 ## Safeguard & backups
 

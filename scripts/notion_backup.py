@@ -53,6 +53,7 @@ DATABASES = {
     "Backlog":          os.getenv("NOTION_BACKLOG_DB", "9d0a30fd4fef43c4ad788770f8fcaaa5"),
     "Owner Log":        os.getenv("NOTION_OWNER_LOG_DB", "8e7af2a7f62d41b5a67bf530472bc1be"),
     "References":       os.getenv("NOTION_REFERENCES_DB", "7ae8adbd39b04bbba01187c5801312c5"),
+    "Decisions":        os.getenv("NOTION_DECISIONS_DB", "209730e36c5245fdac808ab602a1ed6d"),
 }
 
 
