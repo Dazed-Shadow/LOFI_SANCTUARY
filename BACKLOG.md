@@ -9,7 +9,7 @@
 > want a static checked-in copy (e.g. before tagging a release or sharing
 > the repo for review).
 >
-> Last regenerated: **2026-05-17** (manual snapshot at v2 enhancement landing)
+> Last regenerated: **2026-05-17** (after Spotify artist URL wired in)
 
 ---
 
@@ -29,19 +29,14 @@ Populate the framework with the first real batch:
 3. Research 10 outreach targets (5 Twitch variety, 5 Itch.io cozy devs) and add to Outreach CRM with `Personal Hook` filled in for every one.
 4. Write the first Session Log entry.
 
-### 🟡 Medium — Wire her Spotify artist page into the workspace
-**Type:** Enhancement · **Status:** Pending · **Tags:** `notion` `asset`
-
-User will paste the Spotify artist URL in a follow-up message. Once received:
-1. Add a Spotify Artist row at the top of the landing page with a bookmark/embed.
-2. Add a link to the Master Strategy Blueprint Notion page.
-3. Optional: also drop into the README.md quick links.
-
-Holding as Pending until URL is provided.
-
 ---
 
 ## Done
+
+### ✅ Wire her Spotify artist page into the workspace — 2026-05-17
+**Type:** Enhancement · **Tags:** `notion` `asset`
+
+Spotify artist URL `https://open.spotify.com/artist/3AjmrMM0t7YekEDKnk5Tai` wired into: landing page metadata table + bookmark block, Master Strategy Blueprint Notion page (new "Artist" section), and repo `README.md` quick links. Per-track Spotify URLs go into each Asset Library track row's `Spotify Link` column as catalog progresses.
 
 ### ✅ Schema enhancements + Backlog DB + backup safeguard — 2026-05-17
 **Type:** Enhancement · **Tags:** `notion` `asset`

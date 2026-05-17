@@ -30,6 +30,7 @@ BACKLOG.md    Running log of ideas, bugs, and feature requests
 
 ## Quick links
 
+- **Spotify (artist):** [Listen on Spotify](https://open.spotify.com/artist/3AjmrMM0t7YekEDKnk5Tai?si=lS0rhtkoQ16aYZ_1Y3HZ9g)
 - **Notion command center:** [MR_C · LOFI_SANCTUARY](https://www.notion.so/MR_C-LOFI_SANCTUARY-363c30e1314880319921dcf0a2f7770b)
   - 📌 [**Backlog**](https://www.notion.so/9d0a30fd4fef43c4ad788770f8fcaaa5) — source of truth for items (`BACKLOG.md` is a regenerated snapshot)
   - 🎵 [Asset Library](https://www.notion.so/cdf82b386d3b4bd28ea250ea0d4fbb05) — tracks, clearance, mood tags, `Available On` platforms, Spotify link, track docs
