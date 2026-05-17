@@ -77,14 +77,21 @@ Same two-tier pattern as HORIZON_SEARCH:
 
 ## Notion workspace — `MR_C · LOFI_SANCTUARY`
 
-Hybrid layout: HZ-style command-center landing page + the blueprint's 3 campaign databases + a Prompt Library section.
+Workspace: separate top-level Notion workspace (`LOFI Sanctuary`), auth'd via the `plugin:engineering:notion` OAuth flow. Does NOT share an integration with the HZ workspace — isolated by design.
 
-- **Command Center** (page) — dashboard with links to all DBs, current sprint focus, KPI summary
-- **Asset Library** (DB) — every track: title, BPM, duration, mood, approved style refs, license status
-- **Content Pipeline** (DB) — Kanban: Ideation → Prompting → Rendering → Scheduled → Published, with engagement metrics
-- **Outreach CRM** (DB) — every streamer/dev target: contact info, pitch status, tracks offered, follow-up dates
-- **Prompt Library** (page/DB) — every AI video/image prompt, organized by Tier A/B/C and tagged by mood
-- **Session Log** (DB) — lightweight per-session record of what was done and what's next
+**Landing page:** [MR_C-LOFI_SANCTUARY](https://www.notion.so/MR_C-LOFI_SANCTUARY-363c30e1314880319921dcf0a2f7770b) — HZ-style command center with embedded DB views, current focus, agent workflow.
+
+| Page / DB | URL | Role |
+|---|---|---|
+| Command Center (landing) | https://www.notion.so/MR_C-LOFI_SANCTUARY-363c30e1314880319921dcf0a2f7770b | Dashboard, links to everything |
+| 📋 Master Strategy Blueprint | https://www.notion.so/363c30e13148810699afe593526ac2ef | Strategy summary (canonical lives in `docs/blueprint.md`) |
+| 🎨 Design System | https://www.notion.so/363c30e131488159aff3fbd6981d3e7d | Cozy Gamer Sanctuary spec (canonical in `docs/design-system.md`) |
+| 🧭 Quick Reference | https://www.notion.so/363c30e131488164b084d2d65ccf6df7 | Status conventions, caption voice, session checklist |
+| 🎵 Asset Library | https://www.notion.so/cdf82b386d3b4bd28ea250ea0d4fbb05 | Every track + clearance status |
+| 🎬 Content Pipeline | https://www.notion.so/019118f7c515411ab4fe38b8e2cd1b45 | Kanban — ideation to published |
+| 📨 Outreach CRM | https://www.notion.so/5338e679565a4caf85fdcae8dfa39f4d | Streamer/dev contacts + pitch status |
+| ✍️ Prompt Library | https://www.notion.so/d41b2e5f8481479e93e12d3d209ec4ec | Proven AI video/image prompts by tier |
+| 📓 Session Log | https://www.notion.so/7e81ea6e91fc4d4aad6d24620eda593a | Per-session state for resume-ability |
 
 **Session start checklist:**
 1. Read BACKLOG.md for open items
