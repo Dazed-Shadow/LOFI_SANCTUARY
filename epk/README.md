@@ -36,11 +36,11 @@ epk/
 | Hero — artist name | ✅ Mad Bunni | Placeholder stage name (artist's Spotify display is "Jahna."). Final stage name TBD by artist. |
 | Hero — tagline | ✅ Filled | "Lo-fi for cozy games you haven't played yet." Tweak if it doesn't sit right. |
 | Hero — Spotify CTA | ✅ Live | Wired to her Spotify artist URL |
-| About | 🟡 Two drafts inline | Draft A (first-person, confessional) is active; Draft B (third-person) is commented out. Pick one, delete the other. Both anchor to her real Spotify bio line. |
-| Featured tracks | 🟡 Placeholder | JR picks headliner + 2 suggestions in the chat. Then I wire all 3 Spotify embeds. |
+| About | ✅ Draft A active | Her Spotify bio rendered as a visually-distinct pull-quote, our expanded copy underneath. Draft B commented out for swap. **No licensing claims** in the bio — those wait for artist clearance. |
+| Featured tracks | ✅ Wired (3 embeds) | Headliner: *Just another DnB Part 2.* · Slot 2: *Selected Works for Imaginary Video Games* · Slot 3: *Just another DnB.* Mix lands at 2 DnB + 1 cozy-gaming — leans DnB. Easy swap if JR wants to rebalance toward cozy. |
 | Cover gallery | 🟡 Placeholder | Real covers as AI/JR/Artist covers come online from the Asset Library |
-| Licensing | ✅ Live | Credit line now uses "Mad Bunni". Refine wording when artist reviews. |
-| Contact | 🟡 Placeholder | JR to register a dedicated alias (suggestions in HTML comment). Paste address into placeholder. |
+| Licensing | 🟡 Softened — "per-track on request" | Pre-clearance language removed pending artist sign-off. Section structure stays for easy re-enable per-track. Suggested credit line preserved as future reference. |
+| Contact | 🟡 Placeholder | Holding for artist input on her preferred contact channel (per JR). |
 
 ## Discovered catalog (for reference when picking featured tracks)
 

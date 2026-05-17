@@ -41,14 +41,28 @@
            │  Most of this stuff is made in the house."                   │
            └─────────────────────────────────────────────────────────────┘ -->
 
-      <!-- ───── DRAFT A: first-person (confessional / Tier B voice) ───── -->
+      <!-- ───── DRAFT A: first-person, anchored to her own words ─────
+           Her Spotify bio is treated as a visually-distinct pull-quote.
+           The expanded paragraph is our voice extending hers. No licensing
+           claims here — those land in the Licensing section once the
+           artist gives explicit clearance per-track. -->
+      <blockquote class="artist-quote">
+        Just a mad bunni swimmin' overdrive in the vacuum. Most of this stuff is made in the house.
+        <cite>— Mad Bunni, on Spotify</cite>
+      </blockquote>
+
       <p class="lead">
-        Just a mad bunni swimmin' overdrive in the vacuum. Most of this stuff is made in the house — lo-fi loops for cozy games that don't exist yet, the kind of soundtrack you'd hear behind a quiet farming RPG or while a stranger in a small town tells you their story. Made for streamers and indie devs who want music that takes a step back instead of pushing forward. Pre-cleared for stream and in-game use; see <a href="#licensing">Licensing</a>.
+        Lo-fi loops for cozy games that don't exist yet — the kind of soundtrack you'd hear behind a quiet farming RPG, or while a stranger in a small town tells you their story. Made for streamers and indie devs who want music that takes a step back instead of pushing forward.
       </p>
 
       <!-- ───── DRAFT B: third-person (EPK-traditional, slight distance) ─
+      <blockquote class="artist-quote">
+        Just a mad bunni swimmin' overdrive in the vacuum. Most of this stuff is made in the house.
+        <cite>— Mad Bunni, on Spotify</cite>
+      </blockquote>
+
       <p class="lead">
-        Mad Bunni is the working name for an artist who self-describes as "a mad bunni swimmin' overdrive in the vacuum" — most of her catalog is house-produced lo-fi for late nights and cozy spaces. Recent work includes <em>Selected Works for Imaginary Video Games</em> (2026), an album that lives exactly where her gravity sits. All tracks are cleared for stream and in-game use under indie-friendly terms.
+        Mad Bunni is the working name for an artist whose catalog is house-produced lo-fi for late nights and cozy spaces. Recent work includes <em>Selected Works for Imaginary Video Games</em> (2026), an album that lives exactly where her gravity sits.
       </p>
       ───────────────────────────────────────────────────────────────── -->
     </div>
@@ -58,33 +72,38 @@
   <section class="section section-tracks" id="tracks">
     <div class="container">
       <h2>Featured tracks</h2>
-      <p class="section-intro">Press play. Each loop is pre-cleared for stream and in-game use — see <a href="#licensing">Licensing</a>.</p>
+      <p class="section-intro">Press play.</p>
 
       <div class="track-grid">
-        <!-- TODO: replace SPOTIFY_TRACK_ID with real IDs once JR picks featured tracks.
-             Spotify embed URL: https://open.spotify.com/embed/track/{TRACK_ID}
-             Get TRACK_ID by clicking a track on Spotify → Share → Copy link → grab the
-             /track/{ID} portion. -->
-        <div class="track-card placeholder-card">
-          <div class="track-placeholder">Featured track 1<br /><span>Spotify embed slot</span></div>
-        </div>
-        <div class="track-card placeholder-card">
-          <div class="track-placeholder">Featured track 2<br /><span>Spotify embed slot</span></div>
-        </div>
-        <div class="track-card placeholder-card">
-          <div class="track-placeholder">Featured track 3<br /><span>Spotify embed slot</span></div>
-        </div>
-
-        <!-- Template for a real Spotify embed (uncomment + paste track ID):
+        <!-- Slot 1 — Headliner: Just another DnB Part 2. (JR's pick) -->
         <div class="track-card">
           <iframe
             style="border-radius:12px"
-            src="https://open.spotify.com/embed/track/SPOTIFY_TRACK_ID?utm_source=generator"
+            src="https://open.spotify.com/embed/album/0DmC2jhIfjNJ117kPGmhBF?utm_source=generator"
             width="100%" height="152" frameborder="0" allowfullscreen=""
             allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
             loading="lazy"></iframe>
         </div>
-        -->
+
+        <!-- Slot 2 — Selected Works for Imaginary Video Games (album, 2026) -->
+        <div class="track-card">
+          <iframe
+            style="border-radius:12px"
+            src="https://open.spotify.com/embed/album/3GM7KYuMlY94b93mpdmUvQ?utm_source=generator"
+            width="100%" height="152" frameborder="0" allowfullscreen=""
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+            loading="lazy"></iframe>
+        </div>
+
+        <!-- Slot 3 — Just another DnB. (single, 2026) -->
+        <div class="track-card">
+          <iframe
+            style="border-radius:12px"
+            src="https://open.spotify.com/embed/album/1eAj6up63imTZAFp4NUiy4?utm_source=generator"
+            width="100%" height="152" frameborder="0" allowfullscreen=""
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+            loading="lazy"></iframe>
+        </div>
       </div>
     </div>
   </section>
@@ -118,22 +137,26 @@
   <section class="section section-licensing" id="licensing">
     <div class="container">
       <h2>Licensing</h2>
+      <p class="section-intro">Terms are arranged per-track. Reach out and we'll set up clearance for your specific use case.</p>
+
       <div class="license-grid">
         <div class="license-card">
-          <h3>Stream-Safe</h3>
-          <p>Cleared for Twitch, YouTube, Kick, and Discord stages. Drop the track in your stream pack with the credit line below. No takedowns from us, ever.</p>
+          <h3>For streamers</h3>
+          <p>Twitch, YouTube, Kick, Discord stages. Per-track clearance available on request. Pre-cleared "stream packs" coming once a first batch is approved by the artist.</p>
         </div>
         <div class="license-card">
-          <h3>Game-Safe</h3>
-          <p>Indie devs can use any cleared track in-game (commercial or non-commercial), no royalties. The ask: credit in the credits screen and a link in your project description.</p>
+          <h3>For indie devs</h3>
+          <p>In-game use (commercial or non-commercial) arranged per-project. Credit + link is the standard ask; specifics confirmed in conversation.</p>
         </div>
         <div class="license-card">
           <h3>Custom commissions</h3>
           <p>Need a specific mood for a stream theme or a game scene? Custom tracks available at indie-friendly rates. Reach out below.</p>
         </div>
       </div>
+      <!-- Credit line is suggested copy for once tracks are cleared.
+           Leaving it visible so future-us doesn't reinvent it. -->
       <p class="license-credit">
-        <strong>Credit line:</strong> <code>Music by Mad Bunni · [epk-url]</code>
+        <strong>Suggested credit line (once tracks are cleared):</strong> <code>Music by Mad Bunni · [epk-url]</code>
       </p>
     </div>
   </section>
