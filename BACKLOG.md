@@ -1,74 +1,60 @@
-# LOFI_SANCTUARY · Backlog
-*Running log of bugs, feature requests, and ideas. Append new items at the top.*
+# LOFI_SANCTUARY · Backlog (snapshot)
+
+> ⚠️ **This file is a regenerated snapshot, not the source of truth.**
+>
+> The canonical Backlog lives in Notion:
+> 📌 **[LOFI_SANCTUARY Backlog DB](https://www.notion.so/9d0a30fd4fef43c4ad788770f8fcaaa5)**
+>
+> Add, edit, or close items there. Regenerate this file from Notion when you
+> want a static checked-in copy (e.g. before tagging a release or sharing
+> the repo for review).
+>
+> Last regenerated: **2026-05-17** (manual snapshot at v2 enhancement landing)
 
 ---
 
-## How to use this file
+## Open
 
-This is **your** file — you own the items, I work through them. Paste in anything you notice while running the campaign, hear about, or just thought of. I read this at the start of every session and prioritize accordingly.
+### 🔴 High — Catalog her actual song library
+**Type:** Asset · **Tags:** `asset` `notion`
 
-**Pattern for each entry:**
+Cataloging starts at the artist's actual existing artwork. For each released track on her Spotify (URL TBD — user to provide): add to Asset Library with Track Title, BPM, Duration, Mood tags, Available On (Spotify + any other DSPs), Spotify Link, current Status (likely Released), and any creative briefs/lyric sheets/references attached via Track Docs. Free-form notes (mastering history, inspiration, related tracks) go in the row body.
 
-```
-## [YYYY-MM-DD] One-line description
-**Type:** Bug | Feature | Enhancement | Idea | Pitch | Asset
-**Priority:** High | Medium | Low
-**Tags:** #area #concept
-**Detail:** (free-form — what you observed, what you want, why it matters)
-**Resolution:** (filled in when complete — what was done and where it lives)
-```
+### 🔴 High — First-batch content seed
+**Type:** Feature · **Tags:** `asset` `prompt` `outreach` `notion`
 
-**Tag conventions:**
+Populate the framework with the first real batch:
+1. Log 5–10 tracks in Asset Library with BPM, duration, mood tags, current clearance status, and Available On platforms + Spotify Link.
+2. Copy the 3 tier-template prompts from `prompts/` into Prompt Library and run each against one track.
+3. Research 10 outreach targets (5 Twitch variety, 5 Itch.io cozy devs) and add to Outreach CRM with `Personal Hook` filled in for every one.
+4. Write the first Session Log entry.
 
-- `#asset` — track files, BPM/mood metadata, mastering
-- `#design` — visual design system, palette, motifs
-- `#prompt` — AI video/image prompt library
-- `#tier-a` `#tier-b` `#tier-c` — pipeline tier
-- `#youtube` `#tiktok` `#shorts` `#twitch` `#itch` — platform
-- `#outreach` — pitch templates, target lists, CRM hygiene
-- `#licensing` — stream-safe / game-safe clearance, rights paperwork
-- `#notion` — workspace structure, DB schema, automation
-- `#bug` `#feature` `#enhancement` `#idea`
+### 🟡 Medium — Wire her Spotify artist page into the workspace
+**Type:** Enhancement · **Status:** Pending · **Tags:** `notion` `asset`
 
----
+User will paste the Spotify artist URL in a follow-up message. Once received:
+1. Add a Spotify Artist row at the top of the landing page with a bookmark/embed.
+2. Add a link to the Master Strategy Blueprint Notion page.
+3. Optional: also drop into the README.md quick links.
 
-## Open Items
-
-*New entries go here, newest at the top.*
+Holding as Pending until URL is provided.
 
 ---
 
-## [2026-05-17] Bootstrap LOFI_SANCTUARY project
-**Type:** Feature
-**Priority:** High — DONE
-**Tags:** #notion #design #prompt #outreach
-**Detail:** Initial scaffolding pass — establish the HZ-style framework for this creative campaign:
-- GitHub repo `Dazed-Shadow/LOFI_SANCTUARY` (public)
-- Notion workspace `MR_C · LOFI_SANCTUARY` with: Command Center landing, Asset Library DB, Content Pipeline DB, Outreach CRM DB, Prompt Library, Session Log DB
-- Local repo skeleton: docs/, prompts/, outreach/, assets/, scripts/, .github/
-- Master strategy blueprint copied into docs/
-- First-pass design system extracted into docs/design-system.md
-- Stub prompt files for Tier A/B/C
-- Stub outreach templates for Cozy Streamer Pack + Itch.io game jam
-**Resolution:** Shipped 2026-05-17. Repo live at [Dazed-Shadow/LOFI_SANCTUARY](https://github.com/Dazed-Shadow/LOFI_SANCTUARY). Notion command center live with 5 DBs (Asset Library, Content Pipeline, Outreach CRM, Prompt Library, Session Log) + 3 reference pages (Blueprint, Design System, Quick Reference). Cross-links wired both directions.
+## Done
 
----
+### ✅ Schema enhancements + Backlog DB + backup safeguard — 2026-05-17
+**Type:** Enhancement · **Tags:** `notion` `asset`
 
-## [2026-05-17] First-batch content seed
-**Type:** Feature
-**Priority:** High — OPEN
-**Tags:** #asset #prompt #outreach #notion
-**Detail:** Now that the framework exists, populate it with the first real batch:
-- [ ] Log 5-10 tracks in **Asset Library** with BPM, duration, mood tags, and current clearance status
-- [ ] Copy the 3 tier-template prompts from `prompts/` into **Prompt Library** and run each against one track
-- [ ] Research 10 outreach targets (5 Twitch variety, 5 Itch.io cozy devs) and add to **Outreach CRM** with `Personal Hook` filled in for every one
-- [ ] Write first Session Log entry capturing this bootstrap
-**Resolution:** Pending
+Round-2 enhancements:
+- Added Backlog DB to Notion as source-of-truth (HZ pattern).
+- Extended Asset Library with `Available On` (multi-select platforms), `Spotify Link` (URL), and `Track Docs` (FILES).
+- Built `scripts/notion_backup.py` + `scripts/notion_client.py` for scripted backups.
+- Established the pre-change snapshot rule.
 
----
+### ✅ Bootstrap LOFI_SANCTUARY project — 2026-05-17
+**Type:** Feature · **Tags:** `asset` `design` `prompt` `outreach` `notion`
 
-## Completed Items
+Initial scaffolding: public GitHub repo, Notion workspace with command-center landing + 5 DBs + 3 reference pages, local repo skeleton, master strategy blueprint mirrored into `docs/`, first-pass design system, stub prompt files, stub outreach templates.
 
-*Resolved entries stay here as a permanent record.*
-
----
+Repo: https://github.com/Dazed-Shadow/LOFI_SANCTUARY (commits 072cb60 + 9f71939)

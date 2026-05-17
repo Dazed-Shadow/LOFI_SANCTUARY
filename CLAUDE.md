@@ -87,11 +87,23 @@ Workspace: separate top-level Notion workspace (`LOFI Sanctuary`), auth'd via th
 | 📋 Master Strategy Blueprint | https://www.notion.so/363c30e13148810699afe593526ac2ef | Strategy summary (canonical lives in `docs/blueprint.md`) |
 | 🎨 Design System | https://www.notion.so/363c30e131488159aff3fbd6981d3e7d | Cozy Gamer Sanctuary spec (canonical in `docs/design-system.md`) |
 | 🧭 Quick Reference | https://www.notion.so/363c30e131488164b084d2d65ccf6df7 | Status conventions, caption voice, session checklist |
-| 🎵 Asset Library | https://www.notion.so/cdf82b386d3b4bd28ea250ea0d4fbb05 | Every track + clearance status |
+| 📌 **Backlog** | https://www.notion.so/9d0a30fd4fef43c4ad788770f8fcaaa5 | **Source of truth** for items. `BACKLOG.md` in the repo is a regenerated snapshot. |
+| 🎵 Asset Library | https://www.notion.so/cdf82b386d3b4bd28ea250ea0d4fbb05 | Every track + clearance status. Includes `Available On` (platforms), `Spotify Link`, and `Track Docs` (briefs/lyric sheets/references) |
 | 🎬 Content Pipeline | https://www.notion.so/019118f7c515411ab4fe38b8e2cd1b45 | Kanban — ideation to published |
 | 📨 Outreach CRM | https://www.notion.so/5338e679565a4caf85fdcae8dfa39f4d | Streamer/dev contacts + pitch status |
 | ✍️ Prompt Library | https://www.notion.so/d41b2e5f8481479e93e12d3d209ec4ec | Proven AI video/image prompts by tier |
 | 📓 Session Log | https://www.notion.so/7e81ea6e91fc4d4aad6d24620eda593a | Per-session state for resume-ability |
+
+## Safeguard & backups
+
+**Rule: no structural Notion change without a snapshot first.**
+
+- **Pre-change snapshot.** Before any DB schema change, Claude writes a `scripts/backups/session_YYYY-MM-DD_*.json` capturing the schema + row counts of all DBs. Read-only — written via MCP fetch tools, never touches Notion.
+- **Scripted full backup.** `python scripts/notion_backup.py` snapshots every page in every DB to `scripts/backups/backup_*.json`. Keeps the 10 most recent. Setup steps in `scripts/notion_client.py`.
+- **ADD-only philosophy.** `ADD COLUMN` is fine. `DROP COLUMN` on a populated field is forbidden without (a) a fresh backup, (b) a Session Log entry explaining why.
+- **Restore.** Backup JSON contains every page object. Recreate the DB via the Notion API and replay the pages from the most recent backup.
+
+`scripts/backups/` is gitignored — backups stay local, never commit them.
 
 **Session start checklist:**
 1. Read BACKLOG.md for open items

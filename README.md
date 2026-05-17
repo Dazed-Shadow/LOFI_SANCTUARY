@@ -31,11 +31,13 @@ BACKLOG.md    Running log of ideas, bugs, and feature requests
 ## Quick links
 
 - **Notion command center:** [MR_C · LOFI_SANCTUARY](https://www.notion.so/MR_C-LOFI_SANCTUARY-363c30e1314880319921dcf0a2f7770b)
-  - 🎵 [Asset Library](https://www.notion.so/cdf82b386d3b4bd28ea250ea0d4fbb05) — tracks, clearance, mood tags
+  - 📌 [**Backlog**](https://www.notion.so/9d0a30fd4fef43c4ad788770f8fcaaa5) — source of truth for items (`BACKLOG.md` is a regenerated snapshot)
+  - 🎵 [Asset Library](https://www.notion.so/cdf82b386d3b4bd28ea250ea0d4fbb05) — tracks, clearance, mood tags, `Available On` platforms, Spotify link, track docs
   - 🎬 [Content Pipeline](https://www.notion.so/019118f7c515411ab4fe38b8e2cd1b45) — Kanban from ideation to published
   - 📨 [Outreach CRM](https://www.notion.so/5338e679565a4caf85fdcae8dfa39f4d) — streamer/dev contacts + pitch status
   - ✍️ [Prompt Library](https://www.notion.so/d41b2e5f8481479e93e12d3d209ec4ec) — proven AI video prompts by tier
   - 📓 [Session Log](https://www.notion.so/7e81ea6e91fc4d4aad6d24620eda593a) — per-session state for resume-ability
+- **Backups:** `python scripts/notion_backup.py` — see [`scripts/notion_client.py`](./scripts/notion_client.py) for one-time `NOTION_API_KEY` setup
 - **Master strategy blueprint:** [docs/blueprint.md](./docs/blueprint.md)
 - **Design system:** [docs/design-system.md](./docs/design-system.md)
 - **AI prompt library (templates):** [prompts/README.md](./prompts/README.md)
