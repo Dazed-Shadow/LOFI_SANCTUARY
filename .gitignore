@@ -37,8 +37,11 @@ Thumbs.db
 *.psd
 *.ai
 
-# Allow tiny placeholder/sample files only via explicit allow-list
-!assets/samples/**/*.mp3
+# Artist media + images — everything under assets/ stays local
+# (whitelist .gitkeep markers so the directory structure persists in the repo)
+assets/**
+!assets/**/
+!assets/**/.gitkeep
 
 # Notion backups — local snapshots only, never commit
 scripts/backups/
