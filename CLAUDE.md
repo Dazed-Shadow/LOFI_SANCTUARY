@@ -44,6 +44,7 @@ scripts/
   notion_client.py       # Token-based Notion API helper
   notion_backup.py       # Scripted full backup of all 9 DBs
   extract_bpm.py         # librosa-based BPM extraction (pending audio file arrival)
+  extend_loop.py         # ffmpeg-wrapped loop extender for Tier A (CapCut → 1hr; logo-ready)
   requirements.txt       # librosa + soundfile
 .github/                 # Workflows (placeholder)
 BACKLOG.md               # Regenerated snapshot — source of truth is 📌 Backlog DB in Notion
